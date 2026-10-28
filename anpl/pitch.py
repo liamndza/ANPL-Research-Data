@@ -13,7 +13,7 @@ if isinstance(features_data, dict):
 
 absf0 = []
 
-for feat in features_data:
+for feat in features_data: 
     name = feat["name"]
     if isinstance(name, (list, np.ndarray)):
         name = str(np.ravel(name)[0])
@@ -31,7 +31,6 @@ for feat in features_data:
 
 absf0 = np.array(absf0)
 print(len(absf0))
-
 
 
 plt.figure(figsize=(13, 8))
